@@ -25,21 +25,22 @@ Neverforever Admin is the administrative interface for the Neverforever E-commer
 ## Installation
 
 ### Clone the Repository
-```bash
+```
 git clone https://github.com/isabellelbgn/neverforever-admin.git
 cd neverforever-admin
+```
 
 ## Backend Setup
 1. Install dependencies
-```bash
-cd backend
+```
+cd server
 npm install
 ```
 
 2. Database Configuration:
 - Create a MySQL database.
 - Update the environment variables (.env) with your database credentials.
-```bash
+```
 DB_HOST=your-database-host
 DB_USER=your-database-user
 DB_PASSWORD=your-database-password
@@ -47,30 +48,30 @@ DB_NAME=your-database-name
 ```
 
 3. Run Migrations:
-```bash
+```
 npx sequelize db:migrate
 ```
 
 4. Start the Backend Server:
-```bash
+```
 npm start
 ```
 
 ## Frontend Setup
 1. Install Dependencies:
-```bash
-cd ../frontend
+```
+cd client
 npm install
 ```
 
 2. Environment Variables:
 - Update .env and update the environment variables if needed.
-```bash
+```
 REACT_APP_API_URL=http://localhost:5000
 ```
 
 3. Start the Frontend Server:
-```bash
+```
 npm start
 ```
 
